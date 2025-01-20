@@ -1,0 +1,11 @@
+version: 0.0
+os: linux
+files:
+  - source: /index.html
+    destination: /var/www/html/
+  - source: /style.css
+    destination: /var/www/html/
+  - source: /app.js
+    destination: /var/www/html/
+  - source: /images/logo.jpg
+    destination: /var/www/html/images/

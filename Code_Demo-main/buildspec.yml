@@ -1,0 +1,17 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo "No dependencies to install."
+  build:
+    commands:
+      - echo "No build steps needed for static web application."
+  post_build:
+    commands:
+      - echo "Deploying static web application to S3..."
+      - aws s3 sync . s3://demo-web-app-code 
+
+artifacts:
+  files:
+    - '**/*'  # Correct pattern to include all files recursively
