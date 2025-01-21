@@ -10,7 +10,7 @@ phases:
   post_build:
     commands:
       - echo "Deploying static web application to S3..."
-      - aws s3 sync . s3://demo-web-app-code 
+      - aws s3 sync . s3://demo-web-app-code1 
 
 artifacts:
   files:
